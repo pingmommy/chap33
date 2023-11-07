@@ -84,6 +84,9 @@ select empno, ename, sal, grade, losal, hisal
  where sal between losal and hisal;
 -- >> 두 테이블의 정보를 가져와서 특정칼럼을 기준으로 조건을 만듦. 
 
+ select empno, ename, sal, grade
+  from emp, salgrade
+ where sal between losal and hisal;
  
  --Ansi inner join   
 select empno, ename, sal, grade, losal, hisal
